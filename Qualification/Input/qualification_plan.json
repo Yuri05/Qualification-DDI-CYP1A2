@@ -1,0 +1,881 @@
+{
+  "$schema": "https://github.com/Open-Systems-Pharmacology/QualificationPlan/releases/download/v2.1/OSP_Qualification_Plan_Schema.json",
+  "Projects": [
+    {
+      "Id": "Tizanidine",
+      "Path": "../../../Evaluation reports/Evaluation-Tizanidine/Tizanidine.json"
+    },
+    {
+      "Id": "Ethinylestradiol",
+      "Path": "../../../Evaluation reports/Evaluation-Ethinylestradiol/Ethinylestradiol.json"
+    },
+    {
+      "Id": "Fluvoxamine",
+      "Path": "../../../Evaluation reports/Evaluation-Fluvoxamine/Fluvoxamine.json"
+    },
+    {
+      "Id": "Mexiletine",
+      "Path": "../../../Evaluation reports/Evaluation-Mexiletine/Mexiletine.json"
+    },
+
+    {
+      "Id": "Tizanidine-Ethinylestradiol-DDI",
+      "Path": "../Tizanidine-Ethinylestradiol-DDI.json",
+      "BuildingBlocks": [
+        {
+          "Type": "Compound",
+          "Name": "Tizanidine",
+          "Project": "Tizanidine"
+        },
+        {
+          "Type": "Compound",
+          "Name": "Ethinylestradiol",
+          "Project": "Ethinylestradiol"
+        },
+        {
+          "Type": "Formulation",
+          "Name": "Ethinylestradiol tablet",
+          "Project": "Ethinylestradiol"
+        },
+        {
+          "Type": "Formulation",
+          "Name": "Tizanidine tablet fasted",
+          "Project": "Tizanidine"
+        }
+      ],
+      "SimulationParameters": [
+      ]
+    },
+    {
+      "Id": "Caffeine-Fluvoxamine-DDI",
+      "Path": "../Caffeine-Fluvoxamine-DDI.json",
+      "BuildingBlocks": [
+        {
+          "Type": "Compound",
+          "Name": "Fluvoxamine",
+          "Project": "Fluvoxamine"
+        },
+        {
+          "Type": "Formulation",
+          "Name": "Fluvoxamine tablet",
+          "Project": "Fluvoxamine"
+        }
+      ],
+      "SimulationParameters": [
+      ]
+    },
+    {
+      "Id": "Tizanidine-Fluvoxamine-DDI",
+      "Path": "../Tizanidine-Fluvoxamine-DDI.json",
+      "BuildingBlocks": [
+        {
+          "Type": "Compound",
+          "Name": "Fluvoxamine",
+          "Project": "Fluvoxamine"
+        },
+        {
+          "Type": "Compound",
+          "Name": "Tizanidine",
+          "Project": "Tizanidine"
+        },
+        {
+          "Type": "Formulation",
+          "Name": "Fluvoxamine tablet",
+          "Project": "Fluvoxamine"
+        },
+        {
+          "Type": "Formulation",
+          "Name": "Tizanidine tablet fasted",
+          "Project": "Tizanidine"
+        }
+      ],
+      "SimulationParameters": [
+      ]
+    },
+    {
+      "Id": "Caffeine-Mexiletine-DDI",
+      "Path": "../Caffeine-Mexiletine-DDI.json",
+      "BuildingBlocks": [
+        {
+          "Type": "Compound",
+          "Name": "Mexiletine",
+          "Project": "Mexiletine"
+        },
+        {
+          "Type": "Formulation",
+          "Name": "Mexiletine tablet",
+          "Project": "Mexiletine"
+        }
+      ],
+      "SimulationParameters": [
+      ]
+    },
+    {
+      "Id": "Tizanidine-Mexiletine-DDI",
+      "Path": "../Tizanidine-Mexiletine-DDI.json",
+      "BuildingBlocks": [
+        {
+          "Type": "Compound",
+          "Name": "Mexiletine",
+          "Project": "Mexiletine"
+        },
+        {
+          "Type": "Compound",
+          "Name": "Tizanidine",
+          "Project": "Tizanidine"
+        },
+        {
+          "Type": "Formulation",
+          "Name": "Mexiletine tablet",
+          "Project": "Mexiletine"
+        },
+        {
+          "Type": "Formulation",
+          "Name": "Tizanidine tablet fasted",
+          "Project": "Tizanidine"
+        },
+        {
+          "Type": "Formulation",
+          "Name": "Tizanidine tablet fed",
+          "Project": "Tizanidine"
+        }
+      ],
+      "SimulationParameters": [
+      ]
+    },
+    {
+      "Id": "Mexiletine-Fluvoxamine-DDI",
+      "Path": "../Mexiletine-Fluvoxamine-DDI.json",
+      "BuildingBlocks": [
+        {
+          "Type": "Compound",
+          "Name": "Mexiletine",
+          "Project": "Mexiletine"
+        },
+        {
+          "Type": "Compound",
+          "Name": "Fluvoxamine",
+          "Project": "Fluvoxamine"
+        },
+        {
+          "Type": "Formulation",
+          "Name": "Mexiletine tablet",
+          "Project": "Mexiletine"
+        },
+        {
+          "Type": "Formulation",
+          "Name": "Fluvoxamine tablet",
+          "Project": "Fluvoxamine"
+        }
+      ],
+      "SimulationParameters": [
+      ]
+    },
+    {
+      "Id": "Caffeine-Ethinylestradiol-DDI",
+      "Path": "../Caffeine-Ethinylestradiol-DDI.json",
+      "BuildingBlocks": [
+        {
+          "Type": "Compound",
+          "Name": "Ethinylestradiol",
+          "Project": "Ethinylestradiol"
+        },
+        {
+          "Type": "Formulation",
+          "Name": "Ethinylestradiol tablet",
+          "Project": "Ethinylestradiol"
+        }
+      ],
+      "SimulationParameters": [
+      ]
+    }
+  ],
+  "ObservedDataSets": [
+    {
+      "Id": "DDI Ratios",
+      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Database-for-observed-data/v1.1/DDI.csv",
+      "Type": "DDIRatio"
+    }
+  ],
+  "Plots": {
+    "AxesSettings": {
+      "GOFMergedPlotsPredictedVsObserved": [
+        {
+          "Type": "X",
+          "Dimension": "Concentration (mass)",
+          "Unit": "ng/ml",
+          "GridLines": false,
+          "Scaling": "Log"
+        },
+        {
+          "Type": "Y",
+          "Dimension": "Concentration (mass)",
+          "Unit": "ng/ml",
+          "GridLines": false,
+          "Scaling": "Log"
+        }
+      ],
+      "GOFMergedPlotsResidualsOverTime": [
+        {
+          "Type": "X",
+          "Dimension": "Time",
+          "Unit": "h",
+          "GridLines": false,
+          "Scaling": "Linear"
+        },
+        {
+          "Type": "Y",
+          "Dimension": "Dimensionless",
+          "Unit": "",
+          "GridLines": false,
+          "Scaling": "Linear"
+        }
+      ],
+      "ComparisonTimeProfile": [
+        {
+          "Type": "X",
+          "Dimension": "Time",
+          "Unit": "h",
+          "GridLines": false,
+          "Scaling": "Linear"
+        },
+        {
+          "Type": "Y",
+          "Dimension": "Concentration (mass)",
+          "Unit": "ng/ml",
+          "GridLines": false,
+          "Scaling": "Log"
+        }
+      ],
+      "DDIRatioPlotsPredictedVsObserved": [
+        {
+          "Type": "X",
+          "Dimension": "Dimensionless",
+          "Unit": "",
+          "GridLines": false,
+          "Scaling": "Log"
+        },
+        {
+          "Type": "Y",
+          "Dimension": "Dimensionless",
+          "Unit": "",
+          "GridLines": false,
+          "Scaling": "Log"
+        }
+      ],
+      "DDIRatioPlotsResidualsVsObserved": [
+        {
+          "Type": "X",
+          "Dimension": "Dimensionless",
+          "Unit": "",
+          "GridLines": false,
+          "Scaling": "Log"
+        },
+        {
+          "Type": "Y",
+          "Dimension": "Dimensionless",
+          "Unit": "",
+          "GridLines": false,
+          "Scaling": "Log"
+        }
+      ],
+      "PKRatioPlots": [
+        {
+          "Type": "X",
+          "Dimension": "Age",
+          "Unit": "year(s)",
+          "GridLines": false,
+          "Scaling": "Linear"
+        },
+        {
+          "Type": "Y",
+          "Dimension": "Dimensionless",
+          "Unit": "",
+          "GridLines": false,
+          "Scaling": "Log"
+        }
+      ]
+    },
+    "PlotSettings": {
+      "ChartWidth": 500,
+      "ChartHeight": 400,
+      "Fonts": {
+        "AxisSize": 11,
+        "LegendSize": 9,
+        "OriginSize": 9,
+        "FontFamilyName": "Arial",
+        "WatermarkSize": 40
+      }
+    },
+    "AllPlots": [],
+    "GOFMergedPlots": [],
+    "ComparisonTimeProfilePlots": [
+      {
+        "SectionId": 301,
+        "Title": "Granfors 2005 (Tizanidine 4 mg po)",
+        "SimulationDuration": 492,
+        "TimeUnit": "h",
+        "OutputMappings": [
+          {
+            "Project": "Tizanidine-Ethinylestradiol-DDI",
+            "Simulation": "Tizanidine 4mg po",
+            "Output": "Organism|PeripheralVenousBlood|Tizanidine|Plasma (Peripheral Venous Blood)",
+            "ObservedData": "Tizanidine.Granfors2005.4.po.without EE",
+            "StartTime": 480,
+            "TimeUnit": "h",
+            "Color": "#2166ac",
+            "Caption": "Control (without Ethinylestradiol)",
+            "Symbol": "Circle"
+          },
+          {
+            "Project": "Tizanidine-Ethinylestradiol-DDI",
+            "Simulation": "Tizanidine 4mg po Ethinylestradiol 20mg po",
+            "Output": "Organism|PeripheralVenousBlood|Tizanidine|Plasma (Peripheral Venous Blood)",
+            "ObservedData": "Tizanidine.Granfors2005.4.po.with EE",
+            "StartTime": 480,
+            "TimeUnit": "h",
+            "Color": "#b2182b",
+            "Caption": "Treatment with Ethinylestradiol",
+            "Symbol": "Square"
+          }
+        ]
+      },
+      {
+        "SectionId": 302,
+        "Title": "Jeppesen 1996 (Caffeine 200 mg po)",
+        "SimulationDuration": 290,
+        "TimeUnit": "h",
+        "OutputMappings": [
+          {
+            "Project": "Caffeine-Fluvoxamine-DDI",
+            "Simulation": "Caffeine 200mg po",
+            "Output": "Organism|PeripheralVenousBlood|Caffeine|Plasma (Peripheral Venous Blood)",
+            "ObservedData": "Jeppesen1996.Caffeine.200.po.day8.No_Fluvox",
+            "StartTime": 168,
+            "TimeUnit": "h",
+            "Color": "#2166ac",
+            "Caption": "Control (without Fluvoxamine)",
+            "Symbol": "Circle"
+          },
+          {
+            "Project": "Caffeine-Fluvoxamine-DDI",
+            "Simulation": "Caffeine 200mg po 400g Fluvox",
+            "Output": "Organism|PeripheralVenousBlood|Caffeine|Plasma (Peripheral Venous Blood)",
+            "ObservedData": "Jeppesen1996.Caffeine.200.po.day8.With_Fluvox",
+            "StartTime": 168,
+            "TimeUnit": "h",
+            "Color": "#b2182b",
+            "Caption": "Treatment with Fluvoxamine",
+            "Symbol": "Square"
+          }
+        ]
+      },
+      {
+        "SectionId": 302,
+        "Title": "Culm-Merdeck 2005 (Caffeine 250 mg po)",
+        "SimulationDuration": 50,
+        "TimeUnit": "h",
+        "OutputMappings": [
+          {
+            "Project": "Caffeine-Fluvoxamine-DDI",
+            "Simulation": "Caffeine 250mg po",
+            "Output": "Organism|PeripheralVenousBlood|Caffeine|Plasma (Peripheral Venous Blood)",
+            "ObservedData": "Culm-Merdeck2005.Caffeine.250.po.No_Fluvox",
+            "StartTime": 25,
+            "TimeUnit": "h",
+            "Color": "#2166ac",
+            "Caption": "Control (without Fluvoxamine)",
+            "Symbol": "Circle"
+          },
+          {
+            "Project": "Caffeine-Fluvoxamine-DDI",
+            "Simulation": "Caffeine 250mg 120mg predose po100mg Fluvox",
+            "Output": "Organism|PeripheralVenousBlood|Caffeine|Plasma (Peripheral Venous Blood)",
+            "ObservedData": "CulmMerdek2005_250mgSD_NA_NA_Caffeine_DDI",
+            "StartTime": 25,
+            "TimeUnit": "h",
+            "Color": "#b2182b",
+            "Caption": "Treatment with Fluvoxamine",
+            "Symbol": "Square"
+          }
+        ]
+      },
+      {
+        "SectionId": 303,
+        "Title": "Granfors 2004 (Tizanidine 4 mg po)",
+        "SimulationDuration": 98,
+        "TimeUnit": "h",
+        "OutputMappings": [
+          {
+            "Project": "Tizanidine-Fluvoxamine-DDI",
+            "Simulation": "Tizanidine 4mg po",
+            "Output": "Organism|PeripheralVenousBlood|Tizanidine|Plasma (Peripheral Venous Blood)",
+            "ObservedData": "Granfors2004.Tizanidine.4mg.po.sd.Tab_fasted.control.DAY4",
+            "StartTime": 73,
+            "TimeUnit": "h",
+            "Color": "#2166ac",
+            "Caption": "Control (without Fluvoxamine)",
+            "Symbol": "Circle"
+          },
+          {
+            "Project": "Tizanidine-Fluvoxamine-DDI",
+            "Simulation": "Tizanidine 4mg po Fluvoxamine 100mg",
+            "Output": "Organism|PeripheralVenousBlood|Tizanidine|Plasma (Peripheral Venous Blood)",
+            "ObservedData": "Granfors2004.Tizanidine.4mg.po.sd.Tab_fasted.withFluvoxamine_DAY4",
+            "StartTime": 73,
+            "TimeUnit": "h",
+            "Color": "#b2182b",
+            "Caption": "Treatment with Fluvoxamine",
+            "Symbol": "Square"
+          }
+        ]
+      },
+      {
+        "SectionId": 304,
+        "Title": "Momo 2010 (Tizanidine 2 mg po)",
+        "SimulationDuration": 30,
+        "TimeUnit": "h",
+        "OutputMappings": [
+          {
+            "Project": "Tizanidine-Mexiletine-DDI",
+            "Simulation": "Tizanidine 2mg po",
+            "Output": "Organism|PeripheralVenousBlood|Tizanidine|Plasma (Peripheral Venous Blood)",
+            "ObservedData": "Momo2010.Tizanidine.m.2.po.control",
+            "StartTime": 24,
+            "TimeUnit": "h",
+            "Color": "#2166ac",
+            "Caption": "Control (without Mexiletine)",
+            "Symbol": "Circle"
+          },
+          {
+            "Project": "Tizanidine-Mexiletine-DDI",
+            "Simulation": "Tizanidine 2mg po Mexiletine 50mg",
+            "Output": "Organism|PeripheralVenousBlood|Tizanidine|Plasma (Peripheral Venous Blood)",
+            "ObservedData": "Momo2010.Tizanidine.m.2.po.withMexiletine",
+            "StartTime": 24,
+            "TimeUnit": "h",
+            "Color": "#b2182b",
+            "Caption": "Treatment with Mexiletine",
+            "Symbol": "Square"
+          }
+        ]
+      },
+      {
+        "SectionId": 305,
+        "Title": "Joeres 1987 (Caffeine 336 mg po)",
+        "SimulationDuration": 25,
+        "TimeUnit": "h",
+        "OutputMappings": [
+          {
+            "Project": "Caffeine-Mexiletine-DDI",
+            "Simulation": "Caffeine 366mg po",
+            "Output": "Organism|PeripheralVenousBlood|Caffeine|Plasma (Peripheral Venous Blood)",
+            "ObservedData": "Joeres1987.Caffeine.366.po",
+            "StartTime": 0,
+            "TimeUnit": "h",
+            "Color": "#2166ac",
+            "Caption": "Control (without Mexiletine)",
+            "Symbol": "Circle"
+          },
+          {
+            "Project": "Caffeine-Mexiletine-DDI",
+            "Simulation": "Caffeine 366mg po Mexiletine 200mg",
+            "Output": "Organism|PeripheralVenousBlood|Caffeine|Plasma (Peripheral Venous Blood)",
+            "ObservedData": "Joeres1987.Caffeine+Mexiletine.366.po",
+            "StartTime": 0,
+            "TimeUnit": "h",
+            "Color": "#b2182b",
+            "Caption": "Treatment with Mexiletine",
+            "Symbol": "Square"
+          }
+        ]
+      },
+      {
+        "SectionId": 306,
+        "Title": "Kusumoto 2001 (Mexiletine 166.62 mg po)",
+        "SimulationDuration": 193,
+        "TimeUnit": "h",
+        "OutputMappings": [
+          {
+            "Project": "Mexiletine-Fluvoxamine-DDI",
+            "Simulation": "Mexiletine 166.62 mg po",
+            "Output": "Organism|PeripheralVenousBlood|Mexiletine|Plasma (Peripheral Venous Blood)",
+            "ObservedData": "Kusumoto2001.Mexiletine.m.166.62.po",
+            "StartTime": 168,
+            "TimeUnit": "h",
+            "Color": "#2166ac",
+            "Caption": "Control (without Fluvoxamine)",
+            "Symbol": "Circle"
+          },
+          {
+            "Project": "Mexiletine-Fluvoxamine-DDI",
+            "Simulation": "Mexiletine 166.62 mg po Fluvoxamine 50mg bid",
+            "Output": "Organism|PeripheralVenousBlood|Mexiletine|Plasma (Peripheral Venous Blood)",
+            "ObservedData": "Kusumoto2001.Mexiletine+Fluvoxamine.m.166.62.po",
+            "StartTime": 168,
+            "TimeUnit": "h",
+            "Color": "#b2182b",
+            "Caption": "Treatment with Fluvoxamine",
+            "Symbol": "Square"
+          }
+        ]
+      }
+
+    ],
+    "DDIRatioPlots": [
+      {
+        "SectionId": 2,
+        "Title": "CYP1A2 DDI",
+        "PKParameter": "AUC|CMAX",
+        "PlotType": "predictedVsObserved|residualsVsObserved",
+        "Artifacts": [
+          "Plot",
+          "GMFE",
+          "Measure",
+          "Table"
+        ],
+        "Groups": [
+          {
+            "Caption": "Tizanidine + Ethinylestradiol",
+            "Color": "#FF0000",
+            "Symbol": "Square",
+            "DDIRatios": [
+              {
+                "Output": "Organism|PeripheralVenousBlood|Tizanidine|Plasma (Peripheral Venous Blood)",
+                "ObservedData": "DDI Ratios",
+                "ObservedDataRecordId": 50,
+                "SimulationControl": {
+                  "Project": "Tizanidine-Ethinylestradiol-DDI",
+                  "Simulation": "Tizanidine 4mg po",
+                  "StartTime": 480,
+                  "EndTime": "Inf",
+                  "TimeUnit": "h"
+                },
+                "SimulationDDI": {
+                  "Project": "Tizanidine-Ethinylestradiol-DDI",
+                  "Simulation": "Tizanidine 4mg po Ethinylestradiol 20mg po",
+                  "StartTime": 480,
+                  "EndTime": "Inf",
+                  "TimeUnit": "h"
+                }
+              }
+            ]
+          },
+          {
+            "Caption": "Caffeine + Fluvoxamine",
+            "Color": "#008000",
+            "Symbol": "Square",
+            "DDIRatios": [
+              {
+                "Output": "Organism|PeripheralVenousBlood|Caffeine|Plasma (Peripheral Venous Blood)",
+                "ObservedData": "DDI Ratios",
+                "ObservedDataRecordId": 60,
+                "SimulationControl": {
+                  "Project": "Caffeine-Fluvoxamine-DDI",
+                  "Simulation": "Caffeine 200mg po",
+                  "StartTime": 168,
+                  "EndTime": "Inf",
+                  "TimeUnit": "h"
+                },
+                "SimulationDDI": {
+                  "Project": "Caffeine-Fluvoxamine-DDI",
+                  "Simulation": "Caffeine 200mg po 400g Fluvox",
+                  "StartTime": 168,
+                  "EndTime": "Inf",
+                  "TimeUnit": "h"
+                }
+              },
+              {
+                "Output": "Organism|PeripheralVenousBlood|Caffeine|Plasma (Peripheral Venous Blood)",
+                "ObservedData": "DDI Ratios",
+                "ObservedDataRecordId": 61,
+                "SimulationControl": {
+                  "Project": "Caffeine-Fluvoxamine-DDI",
+                  "Simulation": "Caffeine 250mg po",
+                  "StartTime": 25,
+                  "EndTime": "Inf",
+                  "TimeUnit": "h"
+                },
+                "SimulationDDI": {
+                  "Project": "Caffeine-Fluvoxamine-DDI",
+                  "Simulation": "Caffeine 250mg 120mg predose po100mg Fluvox",
+                  "StartTime": 25,
+                  "EndTime": "Inf",
+                  "TimeUnit": "h"
+                }
+              }
+            ]
+          },
+          {
+            "Caption": "Tizanidine + Fluvoxamine",
+            "Color": "#0000FF",
+            "Symbol": "Square",
+            "DDIRatios": [
+              {
+                "Output": "Organism|PeripheralVenousBlood|Tizanidine|Plasma (Peripheral Venous Blood)",
+                "ObservedData": "DDI Ratios",
+                "ObservedDataRecordId": 70,
+                "SimulationControl": {
+                  "Project": "Tizanidine-Fluvoxamine-DDI",
+                  "Simulation": "Tizanidine 4mg po",
+                  "StartTime": 73,
+                  "EndTime": "Inf",
+                  "TimeUnit": "h"
+                },
+                "SimulationDDI": {
+                  "Project": "Tizanidine-Fluvoxamine-DDI",
+                  "Simulation": "Tizanidine 4mg po Fluvoxamine 100mg",
+                  "StartTime": 73,
+                  "EndTime": "Inf",
+                  "TimeUnit": "h"
+                }
+              }
+            ]
+          },
+          {
+            "Caption": "Caffeine + Mexiletine",
+            "Color": "#00C0C0",
+            "Symbol": "Square",
+            "DDIRatios": [
+              {
+                "Output": "Organism|PeripheralVenousBlood|Caffeine|Plasma (Peripheral Venous Blood)",
+                "ObservedData": "DDI Ratios",
+                "ObservedDataRecordId": 80,
+                "SimulationControl": {
+                  "Project": "Caffeine-Mexiletine-DDI",
+                  "Simulation": "Caffeine 366mg po",
+                  "StartTime": 0,
+                  "EndTime": "Inf",
+                  "TimeUnit": "h"
+                },
+                "SimulationDDI": {
+                  "Project": "Caffeine-Mexiletine-DDI",
+                  "Simulation": "Caffeine 366mg po Mexiletine 200mg",
+                  "StartTime": 0,
+                  "EndTime": "Inf",
+                  "TimeUnit": "h"
+                }
+              }
+            ]
+          },
+          {
+            "Caption": "Tizanidine + Mexiletine",
+            "Color": "#FF00FF",
+            "Symbol": "Square",
+            "DDIRatios": [
+              {
+                "Output": "Organism|PeripheralVenousBlood|Tizanidine|Plasma (Peripheral Venous Blood)",
+                "ObservedData": "DDI Ratios",
+                "ObservedDataRecordId": 90,
+                "SimulationControl": {
+                  "Project": "Tizanidine-Mexiletine-DDI",
+                  "Simulation": "Tizanidine 2mg po",
+                  "StartTime": 24,
+                  "EndTime": "Inf",
+                  "TimeUnit": "h"
+                },
+                "SimulationDDI": {
+                  "Project": "Tizanidine-Mexiletine-DDI",
+                  "Simulation": "Tizanidine 2mg po Mexiletine 50mg",
+                  "StartTime": 24,
+                  "EndTime": "Inf",
+                  "TimeUnit": "h"
+                }
+              }
+            ]
+          },
+          {
+            "Caption": "Mexiletine + Fluvoxamine",
+            "Color": "#003300",
+            "Symbol": "Square",
+            "DDIRatios": [
+              {
+                "Output": "Organism|PeripheralVenousBlood|Mexiletine|Plasma (Peripheral Venous Blood)",
+                "ObservedData": "DDI Ratios",
+                "ObservedDataRecordId": 100,
+                "SimulationControl": {
+                  "Project": "Mexiletine-Fluvoxamine-DDI",
+                  "Simulation": "Mexiletine 166.62 mg po",
+                  "StartTime": 168,
+                  "EndTime": "Inf",
+                  "TimeUnit": "h"
+                },
+                "SimulationDDI": {
+                  "Project": "Mexiletine-Fluvoxamine-DDI",
+                  "Simulation": "Mexiletine 166.62 mg po Fluvoxamine 50mg bid",
+                  "StartTime": 168,
+                  "EndTime": "Inf",
+                  "TimeUnit": "h"
+                }
+              }
+            ]
+          },
+          {
+            "Caption": "Caffeine + Ethinylestradiol",
+            "Color": "#b2182b",
+            "Symbol": "Square",
+            "DDIRatios": [
+              {
+                "Output": "Organism|PeripheralVenousBlood|Caffeine|Plasma (Peripheral Venous Blood)",
+                "ObservedData": "DDI Ratios",
+                "ObservedDataRecordId": 110,
+                "SimulationControl": {
+                  "Project": "Caffeine-Ethinylestradiol-DDI",
+                  "Simulation": "Caffeine 200mg po",
+                  "StartTime": 480,
+                  "EndTime": "Inf",
+                  "TimeUnit": "h"
+                },
+                "SimulationDDI": {
+                  "Project": "Caffeine-Ethinylestradiol-DDI",
+                  "Simulation": "Caffeine 200mg po Ethinylestradiol 0.03mg po",
+                  "StartTime": 480,
+                  "EndTime": "Inf",
+                  "TimeUnit": "h"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "Inputs": [],
+  "Sections": [
+    {
+      "Id": 1,
+      "Title": "1 Introduction",
+      "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.0/Empty.md",
+      "Sections": [
+        {
+          "Id": 11,
+          "Title": "1.1 Objective",
+          "Content": "Content/Qualification_objective.md"
+        },
+        {
+          "Id": 12,
+          "Title": "1.2 CYP1A2 DDI Network",
+          "Content": "Content/Qualification_DDI_network_description.md",
+          "Sections": [
+            {
+              "Id": 1201,
+              "Title": "Tizanidine - Ethinylestradiol DDI",
+              "Content": "Content/Tizanidine-Ethinylestradiol-DDI.md"
+            },
+            {
+              "Id": 1202,
+              "Title": "Caffeine - Fluvoxamine DDI",
+              "Content": "Content/Caffeine-Fluvoxamine-DDI.md"
+            },
+            {
+              "Id": 1203,
+              "Title": "Tizanidine - Fluvoxamine DDI",
+              "Content": "Content/Tizanidine-Fluvoxamine-DDI.md"
+            },
+            {
+              "Id": 1204,
+              "Title": "Tizanidine - Mexiletine DDI",
+              "Content": "Content/Tizanidine-Mexiletine-DDI.md"
+            },
+            {
+              "Id": 1205,
+              "Title": "Caffeine - Mexiletine DDI",
+              "Content": "Content/Caffeine-Mexiletine-DDI.md"
+            },
+            {
+              "Id": 1206,
+              "Title": "Mexiletine - Fluvoxamine DDI",
+              "Content": "Content/Mexiletine-Fluvoxamine-DDI.md"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": 2,
+      "Title": "2 Qualification of Use Case CYP1A2-mediated DDI",
+      "Content": "Content/Intro_evaluation_DDI_network.md"
+    },
+    {
+      "Id": 3,
+      "Title": "3 Concentration-Time Profiles",
+      "Content": "Content/Intro_evaluation_CTprofiles.md",
+      "Sections": [
+        {
+          "Id": 301,
+          "Title": "3.1 Tizanidine - Ethinylestradiol DDI",
+          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.0/Empty.md"
+        },
+        {
+          "Id": 302,
+          "Title": "3.2 Caffeine - Fluvoxamine DDI",
+          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.0/Empty.md"
+        },
+        {
+          "Id": 303,
+          "Title": "3.3 Tizanidine - Fluvoxamine DDI",
+          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.0/Empty.md"
+        },
+        {
+          "Id": 304,
+          "Title": "3.2 Tizanidine - Mexiletine DDI",
+          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.0/Empty.md"
+        },
+        {
+          "Id": 305,
+          "Title": "3.4 Caffeine - Mexiletine DDI",
+          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.0/Empty.md"
+        },
+        {
+          "Id": 306,
+          "Title": "3.5 Mexiletine - Fluvoxamine DDI",
+          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.0/Empty.md"
+        }
+      ]
+    },
+    {
+      "Id": 4,
+      "Title": "4 Conclusion",
+      "Content": "Content/Section4_Conclusion.md",
+      "Sections": []
+    },
+    {
+      "Id": 5,
+      "Title": "5 References",
+      "Content": "Content/References.md",
+      "Sections": []
+    },
+    {
+      "Id": 6,
+      "Title": "6 Appendix",
+      "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.0/Empty.md",
+      "Sections": [
+        {
+          "Id": 61,
+          "Title": "6.1 Open Systems Pharmacology Suite (OSPS) Introduction",
+          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.0/OSPS_Introduction.md"
+        },
+        {
+          "Id": 62,
+          "Title": "6.2 Mathematical Implementation of Drug-Drug Interactions",
+          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.0/Mathematical_Implementation_of_DDI.md"
+        },
+        {
+          "Id": 63,
+          "Title": "6.3 Automatic (re)-qualification workflow",
+          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.0/Qualification_Workflow.md"
+        }
+      ]
+    },
+    {
+      "Id": 7,
+      "Title": "7 Glossary",
+      "Content": "Content/glossary.md"
+  }
+  ],
+  "Intro": [
+    {
+      "Path": "Content/titlepage.md"
+    }
+  ]
+}
