@@ -3,24 +3,24 @@
   "Projects": [
     {
       "Id": "Tizanidine",
-      "Path": "../../../Evaluation reports/Evaluation-Tizanidine/Tizanidine.json"
+      "Path": "https://github.com/Open-Systems-Pharmacology/Tizanidine-Model/blob/main/Tizanidine-Model.json"
     },
     {
       "Id": "Ethinylestradiol",
-      "Path": "../../../Evaluation reports/Evaluation-Ethinylestradiol/Ethinylestradiol.json"
+      "Path": "https://github.com/Open-Systems-Pharmacology/Ethinylestradiol-Model/blob/main/Ethinylestradiol-Model.json"
     },
     {
       "Id": "Fluvoxamine",
-      "Path": "../../../Evaluation reports/Evaluation-Fluvoxamine/Fluvoxamine.json"
+      "Path": "https://github.com/Open-Systems-Pharmacology/Fluvoxamine-Model/blob/cyp1a2_cyp2C19_DDI/Fluvoxamine-Model.json"
     },
     {
       "Id": "Mexiletine",
-      "Path": "../../../Evaluation reports/Evaluation-Mexiletine/Mexiletine.json"
+      "Path": "https://github.com/Open-Systems-Pharmacology/Mexiletine-Model/blob/main/Mexiletine-Model.json"
     },
 
     {
       "Id": "Tizanidine-Ethinylestradiol-DDI",
-      "Path": "../Tizanidine-Ethinylestradiol-DDI.json",
+      "Path": "https://github.com/Open-Systems-Pharmacology/Ethinylestradiol-Tizanidine-DDI/blob/main/Ethinylestradiol-Tizanidine-DDI.json",
       "BuildingBlocks": [
         {
           "Type": "Compound",
@@ -48,7 +48,7 @@
     },
     {
       "Id": "Caffeine-Fluvoxamine-DDI",
-      "Path": "../Caffeine-Fluvoxamine-DDI.json",
+      "Path": "https://github.com/esqLABS/Fluvoxamine-Caffeine-DDI/blob/alternative-fluvoxamine-model/Fluvoxamine-Caffeine-DDI.json",
       "BuildingBlocks": [
         {
           "Type": "Compound",
@@ -66,7 +66,7 @@
     },
     {
       "Id": "Tizanidine-Fluvoxamine-DDI",
-      "Path": "../Tizanidine-Fluvoxamine-DDI.json",
+      "Path": "https://github.com/Open-Systems-Pharmacology/Fluvoxamine-Tizanidine-DDI/blob/main/Fluvoxamine-Tizanidine-DDI.json",
       "BuildingBlocks": [
         {
           "Type": "Compound",
@@ -94,7 +94,7 @@
     },
     {
       "Id": "Caffeine-Mexiletine-DDI",
-      "Path": "../Caffeine-Mexiletine-DDI.json",
+      "Path": "https://github.com/Open-Systems-Pharmacology/Mexiletine-Caffeine-DDI/blob/main/Mexiletine-Caffeine-DDI.json",
       "BuildingBlocks": [
         {
           "Type": "Compound",
@@ -112,7 +112,7 @@
     },
     {
       "Id": "Tizanidine-Mexiletine-DDI",
-      "Path": "../Tizanidine-Mexiletine-DDI.json",
+      "Path": "https://github.com/Open-Systems-Pharmacology/Mexiletine-Tizanidine-DDI/blob/main/Mexiletine-Tizanidine-DDI.json",
       "BuildingBlocks": [
         {
           "Type": "Compound",
@@ -145,7 +145,7 @@
     },
     {
       "Id": "Mexiletine-Fluvoxamine-DDI",
-      "Path": "../Mexiletine-Fluvoxamine-DDI.json",
+      "Path": "https://github.com/Open-Systems-Pharmacology/Fluvoxamine-Mexiletine-DDI/blob/main/Fluvoxamine-Mexiletine-DDI.json",
       "BuildingBlocks": [
         {
           "Type": "Compound",
@@ -173,7 +173,7 @@
     },
     {
       "Id": "Caffeine-Ethinylestradiol-DDI",
-      "Path": "../Caffeine-Ethinylestradiol-DDI.json",
+      "Path": "https://github.com/Open-Systems-Pharmacology/Ethinylestradiol-Caffeine-DDI/blob/main/Ethinylestradiol-Caffeine-DDI.json",
       "BuildingBlocks": [
         {
           "Type": "Compound",
@@ -193,7 +193,7 @@
   "ObservedDataSets": [
     {
       "Id": "DDI Ratios",
-      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Database-for-observed-data/v1.1/DDI.csv",
+      "Path": "https://github.com/esqLABS/Database-for-observed-data/blob/master/DDI.csv",
       "Type": "DDIRatio"
     }
   ],
@@ -543,7 +543,7 @@
               {
                 "Output": "Organism|PeripheralVenousBlood|Tizanidine|Plasma (Peripheral Venous Blood)",
                 "ObservedData": "DDI Ratios",
-                "ObservedDataRecordId": 50,
+                "ObservedDataRecordId": 6050,
                 "SimulationControl": {
                   "Project": "Tizanidine-Ethinylestradiol-DDI",
                   "Simulation": "Tizanidine 4mg po",
@@ -569,7 +569,7 @@
               {
                 "Output": "Organism|PeripheralVenousBlood|Caffeine|Plasma (Peripheral Venous Blood)",
                 "ObservedData": "DDI Ratios",
-                "ObservedDataRecordId": 60,
+                "ObservedDataRecordId": 6060,
                 "SimulationControl": {
                   "Project": "Caffeine-Fluvoxamine-DDI",
                   "Simulation": "Caffeine 200mg po",
@@ -588,7 +588,7 @@
               {
                 "Output": "Organism|PeripheralVenousBlood|Caffeine|Plasma (Peripheral Venous Blood)",
                 "ObservedData": "DDI Ratios",
-                "ObservedDataRecordId": 61,
+                "ObservedDataRecordId": 6061,
                 "SimulationControl": {
                   "Project": "Caffeine-Fluvoxamine-DDI",
                   "Simulation": "Caffeine 250mg po",
@@ -614,7 +614,7 @@
               {
                 "Output": "Organism|PeripheralVenousBlood|Tizanidine|Plasma (Peripheral Venous Blood)",
                 "ObservedData": "DDI Ratios",
-                "ObservedDataRecordId": 70,
+                "ObservedDataRecordId": 6070,
                 "SimulationControl": {
                   "Project": "Tizanidine-Fluvoxamine-DDI",
                   "Simulation": "Tizanidine 4mg po",
@@ -640,7 +640,7 @@
               {
                 "Output": "Organism|PeripheralVenousBlood|Caffeine|Plasma (Peripheral Venous Blood)",
                 "ObservedData": "DDI Ratios",
-                "ObservedDataRecordId": 80,
+                "ObservedDataRecordId": 6080,
                 "SimulationControl": {
                   "Project": "Caffeine-Mexiletine-DDI",
                   "Simulation": "Caffeine 366mg po",
@@ -666,7 +666,7 @@
               {
                 "Output": "Organism|PeripheralVenousBlood|Tizanidine|Plasma (Peripheral Venous Blood)",
                 "ObservedData": "DDI Ratios",
-                "ObservedDataRecordId": 90,
+                "ObservedDataRecordId": 6090,
                 "SimulationControl": {
                   "Project": "Tizanidine-Mexiletine-DDI",
                   "Simulation": "Tizanidine 2mg po",
@@ -692,7 +692,7 @@
               {
                 "Output": "Organism|PeripheralVenousBlood|Mexiletine|Plasma (Peripheral Venous Blood)",
                 "ObservedData": "DDI Ratios",
-                "ObservedDataRecordId": 100,
+                "ObservedDataRecordId": 6100,
                 "SimulationControl": {
                   "Project": "Mexiletine-Fluvoxamine-DDI",
                   "Simulation": "Mexiletine 166.62 mg po",
@@ -718,7 +718,7 @@
               {
                 "Output": "Organism|PeripheralVenousBlood|Caffeine|Plasma (Peripheral Venous Blood)",
                 "ObservedData": "DDI Ratios",
-                "ObservedDataRecordId": 110,
+                "ObservedDataRecordId": 6110,
                 "SimulationControl": {
                   "Project": "Caffeine-Ethinylestradiol-DDI",
                   "Simulation": "Caffeine 200mg po",
