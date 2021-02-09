@@ -4,7 +4,7 @@ To demonstrate the level of confidence, the predictive performance of the platfo
 
 The respective *qualification plan* to produce this *qualification report* is transparently documented and provided open-source (https://github.com/Open-Systems-Pharmacology/OSP-Qualification-Reports). The same applies for all presented PBPK models including *evaluation reports* on model building and evaluation of each model (https://github.com/Open-Systems-Pharmacology/OSP-PBPK-Model-Library).
 
-*Evaluation reports* including descriptions on model building and detailed evaluations of the included models are documented separately (see [Section 1.2](#12-CYP2C19-DDI-Network)).
+*Evaluation reports* including descriptions on model building and detailed evaluations of the included models are documented separately (see [Section 1.2](#12-CYP1A2-DDI-Network)).
 
 Please refer to the [Appendix](#6-Appendix) to learn more details:
 
