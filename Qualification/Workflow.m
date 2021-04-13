@@ -14,7 +14,7 @@ if exist(fullfile(cd,'report'),'dir')>0 rmdir(fullfile(cd,'report'),'s'); end
 % replace qualificationRunnerFolder and markdownJoinerFolder with your paths
 qualificationRunnerFolder = 'c:\Program Files\Open Systems Pharmacology\QualificationRunner 9.0';
 markdownJoinerFolder = 'c:\Program Files\Open Systems Pharmacology\markdown-joiner';
-PKSimPortableFolder = 'd:\Work\PK-Sim\';
+PKSimPortableFolder = 'd:\Work\OSPS\PKSim9\';
 
 % --------------------------------------------------------------
 % replace baseDir and qualificationPlanName with your paths
