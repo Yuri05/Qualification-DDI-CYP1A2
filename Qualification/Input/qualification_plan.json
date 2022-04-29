@@ -543,7 +543,7 @@
               {
                 "Output": "Organism|PeripheralVenousBlood|Tizanidine|Plasma (Peripheral Venous Blood)",
                 "ObservedData": "DDI Ratios",
-                "ObservedDataRecordId": 6050,
+                "ObservedDataRecordId": 14002,
                 "SimulationControl": {
                   "Project": "Tizanidine-Ethinylestradiol-DDI",
                   "Simulation": "Tizanidine 4mg po",
@@ -569,7 +569,7 @@
               {
                 "Output": "Organism|PeripheralVenousBlood|Caffeine|Plasma (Peripheral Venous Blood)",
                 "ObservedData": "DDI Ratios",
-                "ObservedDataRecordId": 6060,
+                "ObservedDataRecordId": 14004,
                 "SimulationControl": {
                   "Project": "Caffeine-Fluvoxamine-DDI",
                   "Simulation": "Caffeine 200mg po",
@@ -588,7 +588,7 @@
               {
                 "Output": "Organism|PeripheralVenousBlood|Caffeine|Plasma (Peripheral Venous Blood)",
                 "ObservedData": "DDI Ratios",
-                "ObservedDataRecordId": 6061,
+                "ObservedDataRecordId": 14006,
                 "SimulationControl": {
                   "Project": "Caffeine-Fluvoxamine-DDI",
                   "Simulation": "Caffeine 250mg po",
@@ -614,7 +614,7 @@
               {
                 "Output": "Organism|PeripheralVenousBlood|Tizanidine|Plasma (Peripheral Venous Blood)",
                 "ObservedData": "DDI Ratios",
-                "ObservedDataRecordId": 6070,
+                "ObservedDataRecordId": 13017,
                 "SimulationControl": {
                   "Project": "Tizanidine-Fluvoxamine-DDI",
                   "Simulation": "Tizanidine 4mg po",
@@ -640,7 +640,7 @@
               {
                 "Output": "Organism|PeripheralVenousBlood|Caffeine|Plasma (Peripheral Venous Blood)",
                 "ObservedData": "DDI Ratios",
-                "ObservedDataRecordId": 6080,
+                "ObservedDataRecordId": 14008,
                 "SimulationControl": {
                   "Project": "Caffeine-Mexiletine-DDI",
                   "Simulation": "Caffeine 366mg po",
@@ -666,7 +666,7 @@
               {
                 "Output": "Organism|PeripheralVenousBlood|Tizanidine|Plasma (Peripheral Venous Blood)",
                 "ObservedData": "DDI Ratios",
-                "ObservedDataRecordId": 6090,
+                "ObservedDataRecordId": 13018,
                 "SimulationControl": {
                   "Project": "Tizanidine-Mexiletine-DDI",
                   "Simulation": "Tizanidine 2mg po",
@@ -692,7 +692,7 @@
               {
                 "Output": "Organism|PeripheralVenousBlood|Mexiletine|Plasma (Peripheral Venous Blood)",
                 "ObservedData": "DDI Ratios",
-                "ObservedDataRecordId": 6100,
+                "ObservedDataRecordId": 14010,
                 "SimulationControl": {
                   "Project": "Mexiletine-Fluvoxamine-DDI",
                   "Simulation": "Mexiletine 166.62 mg po",
