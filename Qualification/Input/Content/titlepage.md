@@ -1,9 +1,9 @@
 # CYP1A2 DDI Qualification
 
-| Version                         | 1.0-OSP9.1 |
+| Version                         | 1.1-OSP10.1 |
 | ------------------------------- | ---------- |
-| OSP Version                     | 9.1        |
-| Qualification Framework Version | 2.2        |
+| OSP Version                     | 10.0        |
+| Qualification Framework Version | 2.3        |
 
 
 
