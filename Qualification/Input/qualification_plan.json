@@ -1,26 +1,26 @@
 {
-  "$schema": "https://github.com/Open-Systems-Pharmacology/QualificationPlan/releases/download/v2.2/OSP_Qualification_Plan_Schema.json",
+  "$schema": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/QualificationPlan/v2.3/schemas/OSP_Qualification_Plan_Schema.json",
   "Projects": [
     {
       "Id": "Tizanidine",
-      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Tizanidine-Model/v1.0/Tizanidine-Model.json"
+      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Tizanidine-Model/v1.1/Tizanidine-Model.json"
     },
     {
       "Id": "Ethinylestradiol",
-      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Ethinylestradiol-Model/v1.0/Ethinylestradiol-Model.json"
+      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Ethinylestradiol-Model/v1.1/Ethinylestradiol-Model.json"
     },
     {
       "Id": "Fluvoxamine",
-      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Fluvoxamine-Model/cyp1a2_cyp2C19_DDI/Fluvoxamine-Model.json"
+      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Fluvoxamine-Model/altv1.0/Fluvoxamine-Model.json"
     },
     {
       "Id": "Mexiletine",
-      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Mexiletine-Model/v1.0/Mexiletine-Model.json"
+      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Mexiletine-Model/v1.1/Mexiletine-Model.json"
     },
 
     {
       "Id": "Tizanidine-Ethinylestradiol-DDI",
-      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Ethinylestradiol-Tizanidine-DDI/v1.0/Ethinylestradiol-Tizanidine-DDI.json",
+      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Ethinylestradiol-Tizanidine-DDI/v1.1/Ethinylestradiol-Tizanidine-DDI.json",
       "BuildingBlocks": [
         {
           "Type": "Compound",
@@ -48,7 +48,7 @@
     },
     {
       "Id": "Caffeine-Fluvoxamine-DDI",
-      "Path": "https://raw.githubusercontent.com/esqLABS/Fluvoxamine-Caffeine-DDI/alternative-fluvoxamine-model/Fluvoxamine-Caffeine-DDI.json",
+      "Path": "https://raw.githubusercontent.com/esqLABS/Fluvoxamine-Caffeine-DDI/altv1.1/Fluvoxamine-Caffeine-DDI.json",
       "BuildingBlocks": [
         {
           "Type": "Compound",
@@ -66,7 +66,7 @@
     },
     {
       "Id": "Tizanidine-Fluvoxamine-DDI",
-      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Fluvoxamine-Tizanidine-DDI/v1.0/Fluvoxamine-Tizanidine-DDI.json",
+      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Fluvoxamine-Tizanidine-DDI/v1.1/Fluvoxamine-Tizanidine-DDI.json",
       "BuildingBlocks": [
         {
           "Type": "Compound",
@@ -94,7 +94,7 @@
     },
     {
       "Id": "Caffeine-Mexiletine-DDI",
-      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Mexiletine-Caffeine-DDI/v1.0/Mexiletine-Caffeine-DDI.json",
+      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Mexiletine-Caffeine-DDI/v1.1/Mexiletine-Caffeine-DDI.json",
       "BuildingBlocks": [
         {
           "Type": "Compound",
@@ -112,7 +112,7 @@
     },
     {
       "Id": "Tizanidine-Mexiletine-DDI",
-      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Mexiletine-Tizanidine-DDI/v1.0/Mexiletine-Tizanidine-DDI.json",
+      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Mexiletine-Tizanidine-DDI/v1.1/Mexiletine-Tizanidine-DDI.json",
       "BuildingBlocks": [
         {
           "Type": "Compound",
@@ -145,7 +145,7 @@
     },
     {
       "Id": "Mexiletine-Fluvoxamine-DDI",
-      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Fluvoxamine-Mexiletine-DDI/v1.0/Fluvoxamine-Mexiletine-DDI.json",
+      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Fluvoxamine-Mexiletine-DDI/v1.1/Fluvoxamine-Mexiletine-DDI.json",
       "BuildingBlocks": [
         {
           "Type": "Compound",
@@ -173,7 +173,7 @@
     },
     {
       "Id": "Caffeine-Ethinylestradiol-DDI",
-      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Ethinylestradiol-Caffeine-DDI/v1.0/Ethinylestradiol-Caffeine-DDI.json",
+      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Ethinylestradiol-Caffeine-DDI/v1.1/Ethinylestradiol-Caffeine-DDI.json",
       "BuildingBlocks": [
         {
           "Type": "Compound",
@@ -745,7 +745,7 @@
     {
       "Id": 1,
       "Title": "1 Introduction",
-      "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.1/Empty.md",
+      "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.2/Empty.md",
       "Sections": [
         {
           "Id": 11,
@@ -809,32 +809,32 @@
         {
           "Id": 301,
           "Title": "3.1 Tizanidine - Ethinylestradiol DDI",
-          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.1/Empty.md"
+          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.2/Empty.md"
         },
         {
           "Id": 302,
           "Title": "3.2 Caffeine - Fluvoxamine DDI",
-          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.1/Empty.md"
+          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.2/Empty.md"
         },
         {
           "Id": 303,
           "Title": "3.3 Tizanidine - Fluvoxamine DDI",
-          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.1/Empty.md"
+          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.2/Empty.md"
         },
         {
           "Id": 304,
           "Title": "3.4 Tizanidine - Mexiletine DDI",
-          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.1/Empty.md"
+          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.2/Empty.md"
         },
         {
           "Id": 305,
           "Title": "3.5 Caffeine - Mexiletine DDI",
-          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.1/Empty.md"
+          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.2/Empty.md"
         },
         {
           "Id": 306,
           "Title": "3.6 Mexiletine - Fluvoxamine DDI",
-          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.1/Empty.md"
+          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.2/Empty.md"
         }
       ]
     },
@@ -853,22 +853,22 @@
     {
       "Id": 6,
       "Title": "6 Appendix",
-      "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.1/Empty.md",
+      "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.2/Empty.md",
       "Sections": [
         {
           "Id": 61,
           "Title": "6.1 Open Systems Pharmacology Suite (OSPS) Introduction",
-          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.1/OSPS_Introduction.md"
+          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.2/OSPS_Introduction.md"
         },
         {
           "Id": 62,
           "Title": "6.2 Mathematical Implementation of Drug-Drug Interactions",
-          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.1/Mathematical_Implementation_of_DDI.md"
+          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.2/Mathematical_Implementation_of_DDI.md"
         },
         {
           "Id": 63,
           "Title": "6.3 Automatic (re)-qualification workflow",
-          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.1/Qualification_Workflow.md"
+          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.2/Qualification_Workflow.md"
         }
       ]
     },
