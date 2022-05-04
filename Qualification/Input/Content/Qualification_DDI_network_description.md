@@ -9,7 +9,7 @@ To qualify the developed models for the prediction of the CYP1A2 DDI potential o
 The following perpetrator compounds were selected: 
 
 - **Fluvoxamine** (strong CYP1A2 inhibitor)
-  Model snapshot and evaluation plan (*release* **altv1.0**): https://github.com/Open-Systems-Pharmacology/Fluvoxamine-Model/releases/tag/altv1.0
+  Model snapshot and evaluation plan (*release* **alt_v1.0**): https://github.com/Open-Systems-Pharmacology/Fluvoxamine-Model/releases/tag/alt_v1.0
 - **Ethinylestradiol** (moderate CYP1A2 inhibitor)
   Model snapshot and evaluation plan (*release* **v1.1**): https://github.com/Open-Systems-Pharmacology/Ethinylestradiol-Model/releases/tag/v1.1
 - **Mexiletine** (moderate CYP1A2 inhibitor)

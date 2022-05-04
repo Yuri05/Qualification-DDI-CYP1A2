@@ -11,7 +11,7 @@
     },
     {
       "Id": "Fluvoxamine",
-      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Fluvoxamine-Model/altv1.0/Fluvoxamine-Model.json"
+      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Fluvoxamine-Model/alt_v1.0/Fluvoxamine-Model.json"
     },
     {
       "Id": "Mexiletine",
@@ -193,7 +193,7 @@
   "ObservedDataSets": [
     {
       "Id": "DDI Ratios",
-      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Database-for-observed-data/v1.2/DDI.csv",
+      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Database-for-observed-data/master/DDI.csv",
       "Type": "DDIRatio"
     }
   ],
