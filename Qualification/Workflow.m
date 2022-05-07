@@ -6,11 +6,13 @@ close all
 clear all
 tic
 
+addpath(genpath('C:\CompletSetup_SBSuite\QualificationFramework\Version_2.3\ReportingEngine_3.0.1.53'))
+
 % --------------------------------------------------------------
 % replace qualificationRunnerFolder and markdownJoinerFolder with your paths
-qualificationRunnerFolder = 'c:\Program Files\Open Systems Pharmacology\QualificationRunner 10';
-markdownJoinerFolder = 'c:\Program Files\Open Systems Pharmacology\markdown-joiner\';
-PKSimPortableFolder = 'd:\Work\OSPS\Repos\PK-Sim10.0\';
+qualificationRunnerFolder = 'C:\CompletSetup_SBSuite\QualificationFramework\Version_3.0_beta\QualificationRunner_11.0.128';
+markdownJoinerFolder = 'C:\CompletSetup_SBSuite\QualificationFramework\Version_2.3\markdown-joiner_1.2.0.8';
+PKSimPortableFolder = 'C:\CompletSetup_SBSuite\QualificationFramework\Version_3.0_beta\PK-Sim_11.0.140';
 
 % --------------------------------------------------------------
 % replace baseDir and qualificationPlanName with your paths
@@ -42,13 +44,13 @@ REInput_path = fullfile(baseDir,'re_input');
 REOutput_path = fullfile(baseDir,'re_output');
 ReportOutput_path=fullfile(baseDir,'report');
 
-if exist(fullfile(REInput_path),'dir')>0 rmdir(fullfile(cd,'re_input'),'s'); end
+% if exist(fullfile(REInput_path),'dir')>0 rmdir(fullfile(cd,'re_input'),'s'); end
 if exist(fullfile(REOutput_path),'dir')>0 rmdir(fullfile(cd,'re_output'),'s'); end
 if exist(fullfile(ReportOutput_path),'dir')>0 rmdir(fullfile(cd,'report'),'s'); end
 
 % --------------------------------------------------------------
 % STEP #1: start qualification runner to generate inputs for the reporting engine
-startQualificationRunner(qualificationRunnerFolder, qualificationPlan, REInput_path, ['-p ' PKSimPortableFolder]);
+% startQualificationRunner(qualificationRunnerFolder, qualificationPlan, REInput_path, ['-p ' PKSimPortableFolder]);
 
 % --------------------------------------------------------------
 % STEP #2: start reporting engine
