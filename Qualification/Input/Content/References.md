@@ -4,7 +4,7 @@
 
 **Culm-Merdek 2005** Culm-Merdek KE, Von Moltke LL, Harmatz JS, Greenblatt DJ. Fluvoxamine impairs single-dose caffeine clearance without altering caffeine pharmacodynamics. Br J Clin Pharmacol. 2005;60(5):486-493.
 
-**FDA** U.S. Food and Drug Administration. Drug development and drug interactions: table of substrates, inhibitors and inducers. <Website https://www.fda.gov/drugs/drug-interactions-labeling/drug-development-and-drug-interactions-table-substrates-inhibitors-and-inducers (2017). Accessed 04 March 2019.
+**FDA** U.S. Food and Drug Administration. Drug development and drug interactions: table of substrates, inhibitors and inducers. Website: https://www.fda.gov/drugs/drug-interactions-labeling/drug-development-and-drug-interactions-table-substrates-inhibitors-and-inducers (2020). Accessed 06 May 2022.
 
 **Goldstein 2001** Goldstein JA., J. A. (2001). Clinical relevance of genetic polymorphisms in the human CYP2C subfamily. *Br J Clin Pharmacol*. 2001;British journal of clinical pharmacology, 52(4):), 349-355.
 
