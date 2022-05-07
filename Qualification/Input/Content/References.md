@@ -28,4 +28,4 @@
 
 **Wei 1999** Wei X, Dai R, Zhai S, Thummel KE, Friedman FK, Vestal RE. Inhibition of human liver cytochrome P-450 1A2 by the class IB antiarrhythmics mexiletine, lidocaine, and tocainide. *J Pharmacol Exp Ther*. 1999;289(2):853-858.
 
-**Zhou 2009** Zhou, S-. F,., Yang, L-. P,., Zhou, Z-. W,., Liu, Y-. H,., & Chan, E. (2009). Insights into the Substrate Specificity, Inhibitors, Regulationsubstrate specificity, inhibitors, regulation, and Polymorphismspolymorphisms and the Clinical Impactclinical impact of Human Cytochromehuman cytochrome P450 1A2. The *AAPS J*. 2009;journal, 11(3):), 481-494.
+**Zhou 2009** Zhou SF, Yang LP, Zhou ZW, Liu YH, Chan E. Insights into the substrate specificity, inhibitors, regulation, and polymorphisms and the clinical impact of human cytochrome P450 1A2. AAPS J. 2009 Sep;11(3):481-94. doi: 10.1208/s12248-009-9127-y. Epub 2009 Jul 10. PMID: 19590965; PMCID: PMC2758120.
