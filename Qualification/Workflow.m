@@ -8,9 +8,9 @@ tic
 
 % --------------------------------------------------------------
 % replace qualificationRunnerFolder and markdownJoinerFolder with your paths
-qualificationRunnerFolder = 'c:\Program Files\Open Systems Pharmacology\QualificationRunner 10';
-markdownJoinerFolder = 'c:\Program Files\Open Systems Pharmacology\markdown-joiner\';
-PKSimPortableFolder = 'd:\Work\OSPS\Repos\PK-Sim10.0\';
+qualificationRunnerFolder = 'C:\Software\QualificationRunner_11.0.9999';
+markdownJoinerFolder = 'C:\Software\markdown-joiner_1.2.0.8';
+PKSimPortableFolder = 'C:\Software\PK-Sim_11.0.9999';
 
 % --------------------------------------------------------------
 % replace baseDir and qualificationPlanName with your paths
@@ -60,7 +60,7 @@ reportConfigurationPlan = 'report-configuration-plan.json';
 WSettings.Watermark = '';
 
 % run the Worklfow tasklist of ConfigurationPlan
-SubunitsForDDIPlot = {'Mechanism','Perpetrator','Victim'}; % e.g. {'Mechanism', 'Perpetrator', 'Victim'}
+SubunitsForDDIPlot = {'Perpetrator','Victim'}; % e.g. {'Mechanism', 'Perpetrator', 'Victim'}
 runQualificationWorkflow(WSettings, ConfigurationPlan, TaskList, ObservedDataSets, SubunitsForDDIPlot);
 
 QualificationWorkflowTime = toc/60;
