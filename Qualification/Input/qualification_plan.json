@@ -17,7 +17,6 @@
       "Id": "Mexiletine",
       "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Mexiletine-Model/v1.1/Mexiletine-Model.json"
     },
-
     {
       "Id": "Tizanidine-Ethinylestradiol-DDI",
       "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Ethinylestradiol-Tizanidine-DDI/v1.1/Ethinylestradiol-Tizanidine-DDI.json",
@@ -48,7 +47,7 @@
     },
     {
       "Id": "Caffeine-Fluvoxamine-DDI",
-      "Path": "https://raw.githubusercontent.com/esqLABS/Fluvoxamine-Caffeine-DDI/altv1.1/Fluvoxamine-Caffeine-DDI.json",
+      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Fluvoxamine-Caffeine-DDI/alt_v1.0/Fluvoxamine-Caffeine-DDI.json",
       "BuildingBlocks": [
         {
           "Type": "Compound",
@@ -193,7 +192,7 @@
   "ObservedDataSets": [
     {
       "Id": "DDI Ratios",
-      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Database-for-observed-data/master/DDI.csv",
+      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Database-for-observed-data/v1.4/DDI.csv",
       "Type": "DDIRatio"
     }
   ],
