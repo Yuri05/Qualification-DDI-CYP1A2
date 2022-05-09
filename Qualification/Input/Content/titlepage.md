@@ -2,7 +2,6 @@
 
 
 
-
 | Version                         | x.x-OSPy.y                                                   |
 | ------------------------------- | ------------------------------------------------------------ |
 | Qualification Plan Release      | https://github.com/Open-Systems-Pharmacology/Qualification-DDI-CYP1A2/releases/tag/vx.x |
