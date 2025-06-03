@@ -2,11 +2,11 @@ name: Check Latest Model Releases
 
 on:
   push:
-    paths:
-      - 'Qualification/Input/qualification_plan.json'
+#    paths:
+#      - 'Qualification/Input/qualification_plan.json'
   pull_request:
-    paths:
-      - 'Qualification/Input/qualification_plan.json'
+#    paths:
+#      - 'Qualification/Input/qualification_plan.json'
 
 jobs:
   check-latest-releases:
