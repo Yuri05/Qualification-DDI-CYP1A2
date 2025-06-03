@@ -27,48 +27,42 @@ jobs:
         env:
           QUAL_PLAN: Qualification/Input/qualification_plan.json
         run: |
-          import json
-          import re
-          import requests
-          import sys
+          cat <<EOF > check_releases.py
+import json
+import re
+import requests
+import sys
 
-          # Load the qualification_plan.json
-          with open("${{ env.QUAL_PLAN }}", "r") as f:
-              plan = json.load(f)
+with open("${{ env.QUAL_PLAN }}", "r") as f:
+    plan = json.load(f)
 
-          def parse_github_url(url):
-              """
-              Extract owner, repo, and tag from a raw.githubusercontent.com URL
-              Example: 
-                https://raw.githubusercontent.com/Open-Systems-Pharmacology/Tizanidine-Model/v1.1/Tizanidine-Model.json
-                -> ('Open-Systems-Pharmacology', 'Tizanidine-Model', 'v1.1')
-              """
-              m = re.match(r"https://raw\.githubusercontent\.com/([^/]+)/([^/]+)/([^/]+)/.+", url)
-              if not m:
-                  return None, None, None
-              owner, repo, ref = m.group(1), m.group(2), m.group(3)
-              # Normalize tag for releases ("vX.Y" or similar)
-              return owner, repo, ref
+def parse_github_url(url):
+    m = re.match(r"https://raw\\.githubusercontent\\.com/([^/]+)/([^/]+)/([^/]+)/.+", url)
+    if not m:
+        return None, None, None
+    owner, repo, ref = m.group(1), m.group(2), m.group(3)
+    return owner, repo, ref
 
-          failed = False
-          for project in plan.get("Projects", []):
-              pid = project.get("Id")
-              path = project.get("Path")
-              if not path:
-                  continue
-              owner, repo, ref = parse_github_url(path)
-              if not owner or not repo or not ref:
-                  print(f"Could not parse repo info from {path}")
-                  continue
-              # Query latest release from GitHub API
-              api_url = f"https://api.github.com/repos/{owner}/{repo}/releases/latest"
-              r = requests.get(api_url)
-              if r.status_code != 200:
-                  print(f"Could not fetch releases for {owner}/{repo}")
-                  continue
-              latest_release = r.json().get("tag_name") or ""
-              if latest_release and latest_release != ref:
-                  print(f"Project {pid} has later release {latest_release}")
-                  failed = True
-          if failed:
-              sys.exit(1)
+failed = False
+for project in plan.get("Projects", []):
+    pid = project.get("Id")
+    path = project.get("Path")
+    if not path:
+        continue
+    owner, repo, ref = parse_github_url(path)
+    if not owner or not repo or not ref:
+        print(f"Could not parse repo info from {path}")
+        continue
+    api_url = f"https://api.github.com/repos/{owner}/{repo}/releases/latest"
+    r = requests.get(api_url)
+    if r.status_code != 200:
+        print(f"Could not fetch releases for {owner}/{repo}")
+        continue
+    latest_release = r.json().get("tag_name") or ""
+    if latest_release and latest_release != ref:
+        print(f"Project {pid} has later release {latest_release}")
+        failed = True
+if failed:
+    sys.exit(1)
+EOF
+          python check_releases.py
