@@ -2,11 +2,7 @@ name: Check Latest Model Releases
 
 on:
   push:
-#    paths:
-#      - 'Qualification/Input/qualification_plan.json'
   pull_request:
-#    paths:
-#      - 'Qualification/Input/qualification_plan.json'
 
 jobs:
   check-latest-releases:
@@ -16,53 +12,80 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v4
         with:
-          python-version: '3.x'
+          python-version: '3.10'
 
       - name: Install dependencies
-        run: python -m pip install requests
-
-      - name: Check project releases
-        env:
-          QUAL_PLAN: Qualification/Input/qualification_plan.json
         run: |
-          cat <<EOF > check_releases.py
-import json
-import re
-import requests
-import sys
+          python -m pip install --upgrade pip
+          pip install requests
 
-with open("${{ env.QUAL_PLAN }}", "r") as f:
-    plan = json.load(f)
+      - name: Create release checker script
+        run: |
+          cat > check_releases.py << 'EOF'
+          #!/usr/bin/env python3
+          
+          import json
+          import re
+          import requests
+          import sys
+          import os
+          
+          # Load the qualification_plan.json
+          qualification_plan_path = "Qualification/Input/qualification_plan.json"
+          with open(qualification_plan_path, "r") as f:
+              plan = json.load(f)
+          
+          def parse_github_url(url):
+              """Extract owner, repo, and version tag from raw.githubusercontent.com URL"""
+              pattern = r"https://raw\.githubusercontent\.com/([^/]+)/([^/]+)/([^/]+)/.+"
+              match = re.match(pattern, url)
+              if not match:
+                  return None, None, None
+              return match.group(1), match.group(2), match.group(3)
+          
+          # Use GitHub token for API requests if available
+          headers = {}
+          if "GITHUB_TOKEN" in os.environ:
+              headers["Authorization"] = f"token {os.environ['GITHUB_TOKEN']}"
+          
+          has_outdated_projects = False
+          
+          # Check each project
+          for project in plan.get("Projects", []):
+              project_id = project.get("Id")
+              project_path = project.get("Path")
+              
+              if not project_path:
+                  continue
+                  
+              owner, repo, current_version = parse_github_url(project_path)
+              
+              if not all([owner, repo, current_version]):
+                  print(f"Warning: Could not parse repository info from {project_path}")
+                  continue
+              
+              # Get the latest release using GitHub API
+              api_url = f"https://api.github.com/repos/{owner}/{repo}/releases/latest"
+              try:
+                  response = requests.get(api_url, headers=headers)
+                  response.raise_for_status()
+                  latest_release = response.json().get("tag_name")
+                  
+                  if latest_release and latest_release != current_version:
+                      print(f"Project {project_id} has later release {latest_release}")
+                      has_outdated_projects = True
+                      
+              except requests.RequestException as e:
+                  print(f"Error checking releases for {owner}/{repo}: {str(e)}")
+          
+          # Exit with error code if any outdated projects found
+          if has_outdated_projects:
+              sys.exit(1)
+          EOF
 
-def parse_github_url(url):
-    m = re.match(r"https://raw\\.githubusercontent\\.com/([^/]+)/([^/]+)/([^/]+)/.+", url)
-    if not m:
-        return None, None, None
-    owner, repo, ref = m.group(1), m.group(2), m.group(3)
-    return owner, repo, ref
-
-failed = False
-for project in plan.get("Projects", []):
-    pid = project.get("Id")
-    path = project.get("Path")
-    if not path:
-        continue
-    owner, repo, ref = parse_github_url(path)
-    if not owner or not repo or not ref:
-        print(f"Could not parse repo info from {path}")
-        continue
-    api_url = f"https://api.github.com/repos/{owner}/{repo}/releases/latest"
-    r = requests.get(api_url)
-    if r.status_code != 200:
-        print(f"Could not fetch releases for {owner}/{repo}")
-        continue
-    latest_release = r.json().get("tag_name") or ""
-    if latest_release and latest_release != ref:
-        print(f"Project {pid} has later release {latest_release}")
-        failed = True
-if failed:
-    sys.exit(1)
-EOF
-          python check_releases.py
+      - name: Check for newer releases
+        run: python check_releases.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
