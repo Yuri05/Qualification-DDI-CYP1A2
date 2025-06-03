@@ -6,4 +6,4 @@ on:
 
 jobs:
   check-latest-releases:
-    uses: ./CheckForLatestModelReleasesInQualificationPlan.yml
+    uses: ./CheckForLatestModelReleasesInQualificationPlan.yml@Matlab2R
