@@ -72,6 +72,7 @@ jobs:
                   response = requests.get(api_url, headers=headers)
                   response.raise_for_status()
                   latest_release = response.json().get("tag_name")
+                  print(f"Testing release for {owner}/{repo}: {str(e)}")
                   
                   if latest_release and latest_release != current_version:
                       print(f"Project {project_id} has later release {latest_release}")
