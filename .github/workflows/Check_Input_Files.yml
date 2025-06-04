@@ -22,8 +22,8 @@ jobs:
   Spellcheck:
     uses: Open-Systems-Pharmacology/Workflows/.github/workflows/SpellChecker.yml@main
     
-  Validate-Evaluation-Plan:
+  Validate-Qualification-Plan:
     uses: Open-Systems-Pharmacology/Workflows/.github/workflows/ValidateQualificationPlan.yml@main
     with:
-      qualification-plan: 'Evaluation/Input/evaluation_plan.json'
+      qualification-plan: 'Qualification/Input/qualification_plan.json'
 
