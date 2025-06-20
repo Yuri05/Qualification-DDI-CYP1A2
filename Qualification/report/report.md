@@ -83,18 +83,18 @@ The following perpetrator compounds were selected:
 - **Fluvoxamine** (strong CYP1A2 inhibitor)
   Model snapshot and evaluation plan (*release* **alt_v1.0**): https://github.com/Open-Systems-Pharmacology/Fluvoxamine-Model/releases/tag/alt_v1.0
 - **Ethinylestradiol** (moderate CYP1A2 inhibitor)
-  Model snapshot and evaluation plan (*release* **v1.1**): https://github.com/Open-Systems-Pharmacology/Ethinylestradiol-Model/releases/tag/v1.1
+  Model snapshot and evaluation plan (*release* **v2.0**): https://github.com/Open-Systems-Pharmacology/Ethinylestradiol-Model/releases/tag/v2.0
 - **Mexiletine** (moderate CYP1A2 inhibitor)
-  Model snapshot and evaluation plan (*release* **v1.1**): https://github.com/Open-Systems-Pharmacology/Mexiletine-Model/releases/tag/v1.1
+  Model snapshot and evaluation plan (*release* **v2.0**): https://github.com/Open-Systems-Pharmacology/Mexiletine-Model/releases/tag/v2.0
 
 The following sensitive CYP1A2 substrates as victim drugs were selected:
 
 - **Caffeine**
   PK-Sim compound template
 - **Tizanidine**
-  Model snapshot and evaluation plan (*release* **v1.1**): https://github.com/Open-Systems-Pharmacology/Tizanidine-Model/releases/tag/v1.1
+  Model snapshot and evaluation plan (*release* **v2.0**): https://github.com/Open-Systems-Pharmacology/Tizanidine-Model/releases/tag/v2.0
 - **Mexiletine**
-  Model snapshot and evaluation plan (*release* **v1.1**): https://github.com/Open-Systems-Pharmacology/Mexiletine-Model/releases/tag/v1.1
+  Model snapshot and evaluation plan (*release* **v2.0**): https://github.com/Open-Systems-Pharmacology/Mexiletine-Model/releases/tag/v2.0
 
 The following interaction studies were predicted and used to qualify/optimize the final network:
 
@@ -299,7 +299,7 @@ In the plots,
 
 |PK parameter |GMFE |
 |:------------|:----|
-|AUC          |1.50 |
+|AUC          |1.39 |
 |CMAX         |1.22 |
 
 <br>
@@ -337,14 +337,14 @@ In the plots,
 
 |DataID |Perpetrator                    |Victim         |Predicted AUC Ratio |Observed AUC Ratio |Pred/Obs AUC Ratio |Predicted CMAX Ratio |Observed CMAX Ratio |Pred/Obs CMAX Ratio |Reference        |
 |:------|:------------------------------|:--------------|:-------------------|:------------------|:------------------|:--------------------|:-------------------|:-------------------|:----------------|
-|6110   |Ethinylestradiol, 0.03 mg, PO, |Caffeine, PO   |3.13                |2.13               |1.47               |1.10                 |1.15                |0.96                |Balogh 1995      |
-|13017  |Fluvoxamine, 100 mg, PO,       |Tizanidine, PO |40.11               |33.00              |1.22               |16.00                |12.10               |1.32                |Granfors 2004    |
-|13018  |Mexiletine, 50 mg, PO,         |Tizanidine, PO |2.47                |3.42               |0.72               |2.42                 |3.22                |0.75                |Momo 2010        |
-|14002  |Ethinylestradiol, 20 mg, PO,   |Tizanidine, PO |4.43                |3.92               |1.13               |3.75                 |3.02                |1.24                |Granfors 2005    |
-|14004  |Fluvoxamine, 100 mg, PO,       |Caffeine, PO   |9.03                |7.16               |1.26               |1.08                 |1.09                |0.99                |Jeppesen 1996    |
-|14006  |Fluvoxamine, 100 mg, PO,       |Caffeine, PO   |4.35                |13.71              |0.32               |1.34                 |1.40                |0.96                |Culm-Merdek 2005 |
-|14008  |Mexiletine, 200 mg, PO,        |Caffeine, PO   |1.58                |2.83               |0.56               |1.00                 |1.89                |0.53                |Joeres 1987      |
-|14010  |Fluvoxamine, 50 mg, PO,        |Mexiletine, PO |1.20                |1.55               |0.77               |1.08                 |1.16                |0.93                |Kusumoto 2001    |
+|6110   |Ethinylestradiol, 0.03 mg, PO, |Caffeine, PO   |5.84                |2.13               |2.74               |1.10                 |1.15                |0.96                |Balogh 1995      |
+|13017  |Fluvoxamine, 100 mg, PO,       |Tizanidine, PO |39.12               |33.00              |1.19               |16.00                |12.10               |1.32                |Granfors 2004    |
+|13018  |Mexiletine, 50 mg, PO,         |Tizanidine, PO |2.48                |3.42               |0.73               |2.42                 |3.22                |0.75                |Momo 2010        |
+|14002  |Ethinylestradiol, 20 mg, PO,   |Tizanidine, PO |4.41                |3.92               |1.13               |3.75                 |3.02                |1.24                |Granfors 2005    |
+|14004  |Fluvoxamine, 100 mg, PO,       |Caffeine, PO   |9.97                |7.16               |1.39               |1.08                 |1.09                |0.99                |Jeppesen 1996    |
+|14006  |Fluvoxamine, 100 mg, PO,       |Caffeine, PO   |13.64               |13.71              |0.99               |1.34                 |1.40                |0.96                |Culm-Merdek 2005 |
+|14008  |Mexiletine, 200 mg, PO,        |Caffeine, PO   |1.66                |2.83               |0.59               |1.00                 |1.89                |0.53                |Joeres 1987      |
+|14010  |Fluvoxamine, 50 mg, PO,        |Mexiletine, PO |1.31                |1.55               |0.84               |1.08                 |1.16                |0.93                |Kusumoto 2001    |
 
 <br>
 <br>
@@ -395,7 +395,7 @@ In the plots,
 
 |PK parameter |GMFE |
 |:------------|:----|
-|AUC          |1.29 |
+|AUC          |1.76 |
 |CMAX         |1.14 |
 
 <br>
@@ -408,8 +408,8 @@ In the plots,
 |AUC                          |Number |Ratio [%] |
 |:----------------------------|:------|:---------|
 |Points total                 |2      |-        |
-|Points within Guest *et al.* |2      |100       |
-|Points within 2 fold         |2      |100       |
+|Points within Guest *et al.* |1      |50        |
+|Points within 2 fold         |1      |50        |
 
 <br>
 <br>
@@ -471,7 +471,7 @@ In the plots,
 
 |PK parameter |GMFE |
 |:------------|:----|
-|AUC          |1.58 |
+|AUC          |1.18 |
 |CMAX         |1.11 |
 
 <br>
@@ -484,8 +484,8 @@ In the plots,
 |AUC                          |Number |Ratio [%] |
 |:----------------------------|:------|:---------|
 |Points total                 |4      |-        |
-|Points within Guest *et al.* |3      |75        |
-|Points within 2 fold         |3      |75        |
+|Points within Guest *et al.* |4      |100       |
+|Points within 2 fold         |4      |100       |
 
 <br>
 <br>
@@ -547,7 +547,7 @@ In the plots,
 
 |PK parameter |GMFE |
 |:------------|:----|
-|AUC          |1.57 |
+|AUC          |1.53 |
 |CMAX         |1.59 |
 
 <br>
@@ -625,7 +625,7 @@ In the plots,
 
 |PK parameter |GMFE |
 |:------------|:----|
-|AUC          |1.80 |
+|AUC          |1.60 |
 |CMAX         |1.20 |
 
 <br>
@@ -701,7 +701,7 @@ In the plots,
 
 |PK parameter |GMFE |
 |:------------|:----|
-|AUC          |1.30 |
+|AUC          |1.19 |
 |CMAX         |1.07 |
 
 <br>
@@ -777,7 +777,7 @@ In the plots,
 
 |PK parameter |GMFE |
 |:------------|:----|
-|AUC          |1.24 |
+|AUC          |1.23 |
 |CMAX         |1.30 |
 
 <br>
